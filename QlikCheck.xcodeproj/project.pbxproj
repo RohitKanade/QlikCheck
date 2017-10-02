@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F97894811F8209EF001706A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97894801F8209EF001706A4 /* AppDelegate.swift */; };
+		F97894831F8209EF001706A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97894821F8209EF001706A4 /* ViewController.swift */; };
+		F97894861F8209EF001706A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97894841F8209EF001706A4 /* Main.storyboard */; };
+		F97894891F8209EF001706A4 /* QlikCheck.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F97894871F8209EF001706A4 /* QlikCheck.xcdatamodeld */; };
+		F978948B1F8209EF001706A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F978948A1F8209EF001706A4 /* Assets.xcassets */; };
+		F978948E1F8209EF001706A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F978948C1F8209EF001706A4 /* LaunchScreen.storyboard */; };
+		F97894991F8209F0001706A4 /* QlikCheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97894981F8209F0001706A4 /* QlikCheckTests.swift */; };
+		F97894A41F8209F0001706A4 /* QlikCheckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97894A31F8209F0001706A4 /* QlikCheckUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F97894951F8209F0001706A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F97894751F8209EF001706A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F978947C1F8209EF001706A4;
+			remoteInfo = QlikCheck;
+		};
+		F97894A01F8209F0001706A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F97894751F8209EF001706A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F978947C1F8209EF001706A4;
+			remoteInfo = QlikCheck;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F978947D1F8209EF001706A4 /* QlikCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QlikCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F97894801F8209EF001706A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F97894821F8209EF001706A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F97894851F8209EF001706A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F97894881F8209EF001706A4 /* QlikCheck.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QlikCheck.xcdatamodel; sourceTree = "<group>"; };
+		F978948A1F8209EF001706A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F978948D1F8209EF001706A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F978948F1F8209EF001706A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F97894941F8209F0001706A4 /* QlikCheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QlikCheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F97894981F8209F0001706A4 /* QlikCheckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QlikCheckTests.swift; sourceTree = "<group>"; };
+		F978949A1F8209F0001706A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F978949F1F8209F0001706A4 /* QlikCheckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QlikCheckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F97894A31F8209F0001706A4 /* QlikCheckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QlikCheckUITests.swift; sourceTree = "<group>"; };
+		F97894A51F8209F0001706A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F978947A1F8209EF001706A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F97894911F8209F0001706A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F978949C1F8209F0001706A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F97894741F8209EF001706A4 = {
+			isa = PBXGroup;
+			children = (
+				F978947F1F8209EF001706A4 /* QlikCheck */,
+				F97894971F8209F0001706A4 /* QlikCheckTests */,
+				F97894A21F8209F0001706A4 /* QlikCheckUITests */,
+				F978947E1F8209EF001706A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F978947E1F8209EF001706A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F978947D1F8209EF001706A4 /* QlikCheck.app */,
+				F97894941F8209F0001706A4 /* QlikCheckTests.xctest */,
+				F978949F1F8209F0001706A4 /* QlikCheckUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F978947F1F8209EF001706A4 /* QlikCheck */ = {
+			isa = PBXGroup;
+			children = (
+				F97894801F8209EF001706A4 /* AppDelegate.swift */,
+				F97894821F8209EF001706A4 /* ViewController.swift */,
+				F97894841F8209EF001706A4 /* Main.storyboard */,
+				F978948A1F8209EF001706A4 /* Assets.xcassets */,
+				F978948C1F8209EF001706A4 /* LaunchScreen.storyboard */,
+				F978948F1F8209EF001706A4 /* Info.plist */,
+				F97894871F8209EF001706A4 /* QlikCheck.xcdatamodeld */,
+			);
+			path = QlikCheck;
+			sourceTree = "<group>";
+		};
+		F97894971F8209F0001706A4 /* QlikCheckTests */ = {
+			isa = PBXGroup;
+			children = (
+				F97894981F8209F0001706A4 /* QlikCheckTests.swift */,
+				F978949A1F8209F0001706A4 /* Info.plist */,
+			);
+			path = QlikCheckTests;
+			sourceTree = "<group>";
+		};
+		F97894A21F8209F0001706A4 /* QlikCheckUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F97894A31F8209F0001706A4 /* QlikCheckUITests.swift */,
+				F97894A51F8209F0001706A4 /* Info.plist */,
+			);
+			path = QlikCheckUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F978947C1F8209EF001706A4 /* QlikCheck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F97894A81F8209F0001706A4 /* Build configuration list for PBXNativeTarget "QlikCheck" */;
+			buildPhases = (
+				F97894791F8209EF001706A4 /* Sources */,
+				F978947A1F8209EF001706A4 /* Frameworks */,
+				F978947B1F8209EF001706A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QlikCheck;
+			productName = QlikCheck;
+			productReference = F978947D1F8209EF001706A4 /* QlikCheck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F97894931F8209F0001706A4 /* QlikCheckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F97894AB1F8209F0001706A4 /* Build configuration list for PBXNativeTarget "QlikCheckTests" */;
+			buildPhases = (
+				F97894901F8209F0001706A4 /* Sources */,
+				F97894911F8209F0001706A4 /* Frameworks */,
+				F97894921F8209F0001706A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F97894961F8209F0001706A4 /* PBXTargetDependency */,
+			);
+			name = QlikCheckTests;
+			productName = QlikCheckTests;
+			productReference = F97894941F8209F0001706A4 /* QlikCheckTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F978949E1F8209F0001706A4 /* QlikCheckUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F97894AE1F8209F0001706A4 /* Build configuration list for PBXNativeTarget "QlikCheckUITests" */;
+			buildPhases = (
+				F978949B1F8209F0001706A4 /* Sources */,
+				F978949C1F8209F0001706A4 /* Frameworks */,
+				F978949D1F8209F0001706A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F97894A11F8209F0001706A4 /* PBXTargetDependency */,
+			);
+			name = QlikCheckUITests;
+			productName = QlikCheckUITests;
+			productReference = F978949F1F8209F0001706A4 /* QlikCheckUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F97894751F8209EF001706A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = QlikCheck;
+				TargetAttributes = {
+					F978947C1F8209EF001706A4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					F97894931F8209F0001706A4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F978947C1F8209EF001706A4;
+					};
+					F978949E1F8209F0001706A4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F978947C1F8209EF001706A4;
+					};
+				};
+			};
+			buildConfigurationList = F97894781F8209EF001706A4 /* Build configuration list for PBXProject "QlikCheck" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F97894741F8209EF001706A4;
+			productRefGroup = F978947E1F8209EF001706A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F978947C1F8209EF001706A4 /* QlikCheck */,
+				F97894931F8209F0001706A4 /* QlikCheckTests */,
+				F978949E1F8209F0001706A4 /* QlikCheckUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F978947B1F8209EF001706A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F978948E1F8209EF001706A4 /* LaunchScreen.storyboard in Resources */,
+				F978948B1F8209EF001706A4 /* Assets.xcassets in Resources */,
+				F97894861F8209EF001706A4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F97894921F8209F0001706A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F978949D1F8209F0001706A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F97894791F8209EF001706A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F97894831F8209EF001706A4 /* ViewController.swift in Sources */,
+				F97894811F8209EF001706A4 /* AppDelegate.swift in Sources */,
+				F97894891F8209EF001706A4 /* QlikCheck.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F97894901F8209F0001706A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F97894991F8209F0001706A4 /* QlikCheckTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F978949B1F8209F0001706A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F97894A41F8209F0001706A4 /* QlikCheckUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F97894961F8209F0001706A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F978947C1F8209EF001706A4 /* QlikCheck */;
+			targetProxy = F97894951F8209F0001706A4 /* PBXContainerItemProxy */;
+		};
+		F97894A11F8209F0001706A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F978947C1F8209EF001706A4 /* QlikCheck */;
+			targetProxy = F97894A01F8209F0001706A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F97894841F8209EF001706A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F97894851F8209EF001706A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F978948C1F8209EF001706A4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F978948D1F8209EF001706A4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F97894A61F8209F0001706A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F97894A71F8209F0001706A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F97894A91F8209F0001706A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QlikCheck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = QlikCheck.QlikCheck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F97894AA1F8209F0001706A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QlikCheck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = QlikCheck.QlikCheck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F97894AC1F8209F0001706A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QlikCheckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = QlikCheck.QlikCheckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QlikCheck.app/QlikCheck";
+			};
+			name = Debug;
+		};
+		F97894AD1F8209F0001706A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QlikCheckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = QlikCheck.QlikCheckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QlikCheck.app/QlikCheck";
+			};
+			name = Release;
+		};
+		F97894AF1F8209F0001706A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = QlikCheckUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = QlikCheck.QlikCheckUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = QlikCheck;
+			};
+			name = Debug;
+		};
+		F97894B01F8209F0001706A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = QlikCheckUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = QlikCheck.QlikCheckUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = QlikCheck;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F97894781F8209EF001706A4 /* Build configuration list for PBXProject "QlikCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F97894A61F8209F0001706A4 /* Debug */,
+				F97894A71F8209F0001706A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F97894A81F8209F0001706A4 /* Build configuration list for PBXNativeTarget "QlikCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F97894A91F8209F0001706A4 /* Debug */,
+				F97894AA1F8209F0001706A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F97894AB1F8209F0001706A4 /* Build configuration list for PBXNativeTarget "QlikCheckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F97894AC1F8209F0001706A4 /* Debug */,
+				F97894AD1F8209F0001706A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F97894AE1F8209F0001706A4 /* Build configuration list for PBXNativeTarget "QlikCheckUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F97894AF1F8209F0001706A4 /* Debug */,
+				F97894B01F8209F0001706A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F97894871F8209EF001706A4 /* QlikCheck.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F97894881F8209EF001706A4 /* QlikCheck.xcdatamodel */,
+			);
+			currentVersion = F97894881F8209EF001706A4 /* QlikCheck.xcdatamodel */;
+			path = QlikCheck.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F97894751F8209EF001706A4 /* Project object */;
+}
