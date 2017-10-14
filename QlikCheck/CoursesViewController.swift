@@ -13,7 +13,10 @@ import CoreData
 class CoursesViewController: UITableViewController {
 
     
-    var courses:[Courses] = []
+    var courses:[String] = []
+    var selectedCourse = ""
+    let StaticDtata = StaticData();
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,19 +26,8 @@ class CoursesViewController: UITableViewController {
         self.tableView.contentInset = inset;
         
         // Read the courses 
-        
-        let fetchRequestForCourses: NSFetchRequest<Courses> = Courses.fetchRequest()
-        
-        do{
-            let courseResults = try DatabaseController.getContext().fetch(fetchRequestForCourses)
-            for eachCourse in courseResults as [Courses]{
-                print(eachCourse.name!)
-                courses.append(eachCourse)
-            }
-        }catch{
-            
-        }
-
+        courses = StaticDtata.getCourses()
+        print(courses)
         
         
         // Uncomment the following line to preserve selection between presentations
@@ -59,6 +51,7 @@ class CoursesViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        print(courses.count)
         return courses.count
     }
 
@@ -67,8 +60,8 @@ class CoursesViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "courseCell", for: indexPath) as! CourseCell
 
         // Configure the cell...
-        
-        cell.name.text = courses[indexPath.row].name
+        print(courses[indexPath.row])
+        cell.name.text = courses[indexPath.row]
         cell.icon.image = UIImage(named:cell.name.text!)!
 
         return cell
@@ -109,15 +102,27 @@ class CoursesViewController: UITableViewController {
         return true
     }
     */
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(courses[indexPath.row])
+        selectedCourse = courses[indexPath.row]
+        performSegue(withIdentifier: "questionSeque", sender: self)
 
-    /*
+    }
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
+        // Get the new view controller using .
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "questionSeque" {
+            // Setup new view controller
+            let controller = segue.destination as! QuestionViewController
+            controller.questions = StaticDtata.getQuestions(course: selectedCourse)
+        }
     }
-    */
 
 }

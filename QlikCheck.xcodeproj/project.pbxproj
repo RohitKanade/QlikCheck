@@ -8,20 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		F918924B1F88B54300CABEBF /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F918924A1F88B54300CABEBF /* DatabaseController.swift */; };
-		F91892691F88B97500CABEBF /* Questions+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91892651F88B97500CABEBF /* Questions+CoreDataClass.swift */; };
-		F918926A1F88B97500CABEBF /* Questions+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91892661F88B97500CABEBF /* Questions+CoreDataProperties.swift */; };
-		F918926B1F88B97500CABEBF /* Courses+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91892671F88B97500CABEBF /* Courses+CoreDataClass.swift */; };
-		F918926C1F88B97500CABEBF /* Courses+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91892681F88B97500CABEBF /* Courses+CoreDataProperties.swift */; };
 		F9303D241F88F33B00F2E4EE /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9303D231F88F33B00F2E4EE /* CoursesViewController.swift */; };
 		F9303D291F8905E100F2E4EE /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9303D281F8905E100F2E4EE /* CourseCell.swift */; };
 		F97894811F8209EF001706A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97894801F8209EF001706A4 /* AppDelegate.swift */; };
-		F97894831F8209EF001706A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97894821F8209EF001706A4 /* ViewController.swift */; };
 		F97894861F8209EF001706A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97894841F8209EF001706A4 /* Main.storyboard */; };
 		F97894891F8209EF001706A4 /* QlikCheck.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F97894871F8209EF001706A4 /* QlikCheck.xcdatamodeld */; };
 		F978948B1F8209EF001706A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F978948A1F8209EF001706A4 /* Assets.xcassets */; };
 		F978948E1F8209EF001706A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F978948C1F8209EF001706A4 /* LaunchScreen.storyboard */; };
 		F97894991F8209F0001706A4 /* QlikCheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97894981F8209F0001706A4 /* QlikCheckTests.swift */; };
 		F97894A41F8209F0001706A4 /* QlikCheckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97894A31F8209F0001706A4 /* QlikCheckUITests.swift */; };
+		F9DA771F1F9242FC005B1725 /* StaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DA771E1F9242FC005B1725 /* StaticData.swift */; };
+		F9DA77241F924FA5005B1725 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DA77231F924FA5005B1725 /* Questions.swift */; };
+		F9DA77261F9252A5005B1725 /* DataModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DA77251F9252A5005B1725 /* DataModeling.swift */; };
+		F9DA77281F92583D005B1725 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DA77271F92583D005B1725 /* QuestionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,15 +42,10 @@
 
 /* Begin PBXFileReference section */
 		F918924A1F88B54300CABEBF /* DatabaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
-		F91892651F88B97500CABEBF /* Questions+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Questions+CoreDataClass.swift"; path = "../Questions+CoreDataClass.swift"; sourceTree = "<group>"; };
-		F91892661F88B97500CABEBF /* Questions+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Questions+CoreDataProperties.swift"; path = "../Questions+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		F91892671F88B97500CABEBF /* Courses+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Courses+CoreDataClass.swift"; path = "../Courses+CoreDataClass.swift"; sourceTree = "<group>"; };
-		F91892681F88B97500CABEBF /* Courses+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Courses+CoreDataProperties.swift"; path = "../Courses+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F9303D231F88F33B00F2E4EE /* CoursesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		F9303D281F8905E100F2E4EE /* CourseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		F978947D1F8209EF001706A4 /* QlikCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QlikCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97894801F8209EF001706A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F97894821F8209EF001706A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F97894851F8209EF001706A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F97894881F8209EF001706A4 /* QlikCheck.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QlikCheck.xcdatamodel; sourceTree = "<group>"; };
 		F978948A1F8209EF001706A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +57,10 @@
 		F978949F1F8209F0001706A4 /* QlikCheckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QlikCheckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97894A31F8209F0001706A4 /* QlikCheckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QlikCheckUITests.swift; sourceTree = "<group>"; };
 		F97894A51F8209F0001706A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9DA771E1F9242FC005B1725 /* StaticData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticData.swift; sourceTree = "<group>"; };
+		F9DA77231F924FA5005B1725 /* Questions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		F9DA77251F9252A5005B1725 /* DataModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModeling.swift; sourceTree = "<group>"; };
+		F9DA77271F92583D005B1725 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,17 +88,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F91892541F88B74700CABEBF /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				F91892651F88B97500CABEBF /* Questions+CoreDataClass.swift */,
-				F91892661F88B97500CABEBF /* Questions+CoreDataProperties.swift */,
-				F91892671F88B97500CABEBF /* Courses+CoreDataClass.swift */,
-				F91892681F88B97500CABEBF /* Courses+CoreDataProperties.swift */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
 		F9303D251F88F80200F2E4EE /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,17 +119,18 @@
 		F978947F1F8209EF001706A4 /* QlikCheck */ = {
 			isa = PBXGroup;
 			children = (
+				F9DA77221F924CB3005B1725 /* Model */,
+				F9DA771D1F9242B9005B1725 /* Data */,
 				F9303D251F88F80200F2E4EE /* ViewModels */,
-				F91892541F88B74700CABEBF /* Models */,
 				F97894801F8209EF001706A4 /* AppDelegate.swift */,
 				F918924A1F88B54300CABEBF /* DatabaseController.swift */,
-				F97894821F8209EF001706A4 /* ViewController.swift */,
 				F97894841F8209EF001706A4 /* Main.storyboard */,
 				F978948A1F8209EF001706A4 /* Assets.xcassets */,
 				F978948C1F8209EF001706A4 /* LaunchScreen.storyboard */,
 				F978948F1F8209EF001706A4 /* Info.plist */,
 				F97894871F8209EF001706A4 /* QlikCheck.xcdatamodeld */,
 				F9303D231F88F33B00F2E4EE /* CoursesViewController.swift */,
+				F9DA77271F92583D005B1725 /* QuestionViewController.swift */,
 			);
 			path = QlikCheck;
 			sourceTree = "<group>";
@@ -163,6 +151,23 @@
 				F97894A51F8209F0001706A4 /* Info.plist */,
 			);
 			path = QlikCheckUITests;
+			sourceTree = "<group>";
+		};
+		F9DA771D1F9242B9005B1725 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F9DA771E1F9242FC005B1725 /* StaticData.swift */,
+				F9DA77251F9252A5005B1725 /* DataModeling.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		F9DA77221F924CB3005B1725 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9DA77231F924FA5005B1725 /* Questions.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,16 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9DA77241F924FA5005B1725 /* Questions.swift in Sources */,
 				F918924B1F88B54300CABEBF /* DatabaseController.swift in Sources */,
-				F918926A1F88B97500CABEBF /* Questions+CoreDataProperties.swift in Sources */,
-				F97894831F8209EF001706A4 /* ViewController.swift in Sources */,
 				F97894811F8209EF001706A4 /* AppDelegate.swift in Sources */,
 				F9303D291F8905E100F2E4EE /* CourseCell.swift in Sources */,
-				F918926C1F88B97500CABEBF /* Courses+CoreDataProperties.swift in Sources */,
+				F9DA77261F9252A5005B1725 /* DataModeling.swift in Sources */,
 				F97894891F8209EF001706A4 /* QlikCheck.xcdatamodeld in Sources */,
-				F91892691F88B97500CABEBF /* Questions+CoreDataClass.swift in Sources */,
-				F918926B1F88B97500CABEBF /* Courses+CoreDataClass.swift in Sources */,
 				F9303D241F88F33B00F2E4EE /* CoursesViewController.swift in Sources */,
+				F9DA771F1F9242FC005B1725 /* StaticData.swift in Sources */,
+				F9DA77281F92583D005B1725 /* QuestionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
