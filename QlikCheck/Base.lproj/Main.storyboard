@@ -64,7 +64,7 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <segue destination="x8k-IT-F0z" kind="showDetail" identifier="questionSeque" id="mAc-ZK-CY4"/>
+                        <segue destination="tUh-md-Kx3" kind="showDetail" identifier="questionSeque" id="3qo-Cs-Iiv"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ORm-VU-TeV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -72,22 +72,48 @@
             <point key="canvasLocation" x="682" y="-162"/>
         </scene>
         <!--Question View Controller-->
-        <scene sceneID="VKY-dI-hUR">
+        <scene sceneID="k9e-eN-UR1">
             <objects>
-                <viewController id="x8k-IT-F0z" customClass="QuestionViewController" customModule="QlikCheck" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tUh-md-Kx3" customClass="QuestionViewController" customModule="QlikCheck" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZSF-Hb-DzC"/>
-                        <viewControllerLayoutGuide type="bottom" id="aFW-Ub-U6t"/>
+                        <viewControllerLayoutGuide type="top" id="ucy-fg-mxg"/>
+                        <viewControllerLayoutGuide type="bottom" id="xJE-nn-jZU"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="GSW-zM-S86">
+                    <view key="view" contentMode="scaleToFill" id="qSZ-IA-2SZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="34v-Hq-MCR">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Quize" id="uku-Bh-NQQ"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9T-Q5-wOR">
+                                <rect key="frame" x="22" y="27" width="34" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RYG-cj-Tyq"/>
+                                    <constraint firstAttribute="width" constant="34" id="fI1-4V-NIe"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="p0w-1B-I3f" kind="showDetail" id="PgR-D0-2Ur"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="34v-Hq-MCR" firstAttribute="leading" secondItem="qSZ-IA-2SZ" secondAttribute="leading" id="5Mg-BN-fa0"/>
+                            <constraint firstItem="34v-Hq-MCR" firstAttribute="top" secondItem="ucy-fg-mxg" secondAttribute="bottom" id="6Cq-vf-LZC"/>
+                            <constraint firstAttribute="trailing" secondItem="34v-Hq-MCR" secondAttribute="trailing" id="GnA-X4-m9E"/>
+                            <constraint firstItem="F9T-Q5-wOR" firstAttribute="top" secondItem="ucy-fg-mxg" secondAttribute="bottom" constant="7" id="IIC-La-MUr"/>
+                            <constraint firstItem="F9T-Q5-wOR" firstAttribute="leading" secondItem="qSZ-IA-2SZ" secondAttribute="leadingMargin" constant="6" id="r5F-U9-Zed"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="H9M-j1-BJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wes-rA-2lC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1423" y="-162"/>
+            <point key="canvasLocation" x="1469" y="-164"/>
         </scene>
     </scenes>
 </document>

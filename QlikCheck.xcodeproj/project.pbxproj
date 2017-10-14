@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F918924B1F88B54300CABEBF /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F918924A1F88B54300CABEBF /* DatabaseController.swift */; };
 		F9303D241F88F33B00F2E4EE /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9303D231F88F33B00F2E4EE /* CoursesViewController.swift */; };
 		F9303D291F8905E100F2E4EE /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9303D281F8905E100F2E4EE /* CourseCell.swift */; };
 		F97894811F8209EF001706A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97894801F8209EF001706A4 /* AppDelegate.swift */; };
@@ -41,7 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F918924A1F88B54300CABEBF /* DatabaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
 		F9303D231F88F33B00F2E4EE /* CoursesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		F9303D281F8905E100F2E4EE /* CourseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		F978947D1F8209EF001706A4 /* QlikCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QlikCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,7 +121,6 @@
 				F9DA771D1F9242B9005B1725 /* Data */,
 				F9303D251F88F80200F2E4EE /* ViewModels */,
 				F97894801F8209EF001706A4 /* AppDelegate.swift */,
-				F918924A1F88B54300CABEBF /* DatabaseController.swift */,
 				F97894841F8209EF001706A4 /* Main.storyboard */,
 				F978948A1F8209EF001706A4 /* Assets.xcassets */,
 				F978948C1F8209EF001706A4 /* LaunchScreen.storyboard */,
@@ -305,7 +302,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9DA77241F924FA5005B1725 /* Questions.swift in Sources */,
-				F918924B1F88B54300CABEBF /* DatabaseController.swift in Sources */,
 				F97894811F8209EF001706A4 /* AppDelegate.swift in Sources */,
 				F9303D291F8905E100F2E4EE /* CourseCell.swift in Sources */,
 				F9DA77261F9252A5005B1725 /* DataModeling.swift in Sources */,
