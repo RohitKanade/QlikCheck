@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F904919B1F939DC9000187FD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F904919A1F939DC9000187FD /* Extension.swift */; };
 		F9303D241F88F33B00F2E4EE /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9303D231F88F33B00F2E4EE /* CoursesViewController.swift */; };
 		F9303D291F8905E100F2E4EE /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9303D281F8905E100F2E4EE /* CourseCell.swift */; };
 		F97894811F8209EF001706A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97894801F8209EF001706A4 /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F904919A1F939DC9000187FD /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		F9303D231F88F33B00F2E4EE /* CoursesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		F9303D281F8905E100F2E4EE /* CourseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		F978947D1F8209EF001706A4 /* QlikCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QlikCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F90491991F939DB3000187FD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F904919A1F939DC9000187FD /* Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		F9303D251F88F80200F2E4EE /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +127,7 @@
 		F978947F1F8209EF001706A4 /* QlikCheck */ = {
 			isa = PBXGroup;
 			children = (
+				F90491991F939DB3000187FD /* Extensions */,
 				F9DA77221F924CB3005B1725 /* Model */,
 				F9DA771D1F9242B9005B1725 /* Data */,
 				F9303D251F88F80200F2E4EE /* ViewModels */,
@@ -301,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F904919B1F939DC9000187FD /* Extension.swift in Sources */,
 				F9DA77241F924FA5005B1725 /* Questions.swift in Sources */,
 				F97894811F8209EF001706A4 /* AppDelegate.swift in Sources */,
 				F9303D291F8905E100F2E4EE /* CourseCell.swift in Sources */,
