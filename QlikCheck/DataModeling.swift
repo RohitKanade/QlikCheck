@@ -25,7 +25,7 @@ func DataModeling() -> [Questions] {
     one.optionD = "option D"
     
     one.explanation = "Its Explaination"
-    one.rightAnswer = "optionA"
+    one.rightAnswer = "option A"
     
     questions.append(one)
     
@@ -38,7 +38,7 @@ func DataModeling() -> [Questions] {
     two.optionD = "option D"
 
     two.explanation = "Its Explaination"
-    two.rightAnswer = "optionA"
+    two.rightAnswer = "option A"
 
     questions.append(two)
     
@@ -51,7 +51,7 @@ func DataModeling() -> [Questions] {
     three.optionD = "option D"
 
     three.explanation = "Its Explaination"
-    three.rightAnswer = "optionA"
+    three.rightAnswer = "option A"
     
     questions.append(three)
     
@@ -64,7 +64,7 @@ func DataModeling() -> [Questions] {
     four.optionD = "option D"
 
     four.explanation = "Its Explaination"
-    four.rightAnswer = "optionA"
+    four.rightAnswer = "option A"
     
     questions.append(four)
     
@@ -77,7 +77,7 @@ func DataModeling() -> [Questions] {
     five.optionD = "option D"
 
     five.explanation = "Its Explaination"
-    five.rightAnswer = "optionA"
+    five.rightAnswer = "option A"
     
     questions.append(five)
     

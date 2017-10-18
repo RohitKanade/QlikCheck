@@ -74,6 +74,9 @@ class QuestionViewController: UIViewController {
         optionB.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
         optionC.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
         optionD.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
+        
+        // user selected answer
+        questions[currentCount].userAnswer = questions[currentCount].optionA
     }
 
     @IBAction func OptionBSelected(_ sender: Any) {
@@ -83,6 +86,9 @@ class QuestionViewController: UIViewController {
         optionA.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
         optionC.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
         optionD.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
+        
+        // user selected answer
+        questions[currentCount].userAnswer = questions[currentCount].optionB
     }
     
     @IBAction func OptionCSelected(_ sender: Any) {
@@ -92,6 +98,9 @@ class QuestionViewController: UIViewController {
         optionA.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
         optionB.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
         optionD.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
+        
+        // user selected answer
+        questions[currentCount].userAnswer = questions[currentCount].optionC
     }
 
     @IBAction func OptionDSelected(_ sender: Any) {
@@ -101,11 +110,27 @@ class QuestionViewController: UIViewController {
         optionB.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
         optionC.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
         optionA.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
+        
+        // user selected answer
+        questions[currentCount].userAnswer = questions[currentCount].optionD
     }
-    
     
     // Show Answer
     @IBAction func ShowAnswer(_ sender: Any) {
+    showCurrectAnswer()
+    }
+    
+    func showCurrectAnswer(){
+      
+        if (questions[currentCount].rightAnswer! == questions[currentCount].optionA!){
+            optionA.backgroundColor = UIColor.green
+        }else if(questions[currentCount].rightAnswer! == questions[currentCount].optionB!){
+            optionB.backgroundColor = UIColor.green
+        }else if (questions[currentCount].rightAnswer! == questions[currentCount].optionC!){
+            optionC.backgroundColor = UIColor.green
+        }else if (questions[currentCount].rightAnswer! == questions[currentCount].optionD!){
+            optionD.backgroundColor = UIColor.green
+        }
     }
     
     // Next
@@ -115,15 +140,30 @@ class QuestionViewController: UIViewController {
         print(currentCount)
         
         if (currentCount+1) > totalQuestion{
+            performSegue(withIdentifier: "resultSeque", sender: self)
             
         }else{
             currentQuestion = questions[currentCount]
             setQuestion(currentQuestion: currentQuestion!)
         }
         
-        optionA.backgroundColor = hexStringToUIColor(hex: "F9F9F9")    
+        optionA.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
         optionB.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
         optionC.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
         optionD.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
+    }
+    
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using .
+        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "resultSeque" {
+            // Setup new view controller
+            let controller = segue.destination as! ResultViewController
+            controller.questions = questions
+        }
     }
 }

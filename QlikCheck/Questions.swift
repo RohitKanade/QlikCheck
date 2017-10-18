@@ -17,4 +17,6 @@ class Questions {
      public var optionD: String?
      public var rightAnswer: String?
      public var explanation: String?
+    
+     public var userAnswer: String?
 }

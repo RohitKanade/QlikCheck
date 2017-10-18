@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		F904919B1F939DC9000187FD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F904919A1F939DC9000187FD /* Extension.swift */; };
+		F908F6A91F9709A300A29E21 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908F6A81F9709A300A29E21 /* ResultViewController.swift */; };
+		F908F6AB1F971CAC00A29E21 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908F6AA1F971CAC00A29E21 /* AnswerCell.swift */; };
+		F908F6AF1F97276400A29E21 /* AnswerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908F6AE1F97276400A29E21 /* AnswerDetailViewController.swift */; };
 		F9303D241F88F33B00F2E4EE /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9303D231F88F33B00F2E4EE /* CoursesViewController.swift */; };
 		F9303D291F8905E100F2E4EE /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9303D281F8905E100F2E4EE /* CourseCell.swift */; };
 		F97894811F8209EF001706A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97894801F8209EF001706A4 /* AppDelegate.swift */; };
@@ -42,6 +45,9 @@
 
 /* Begin PBXFileReference section */
 		F904919A1F939DC9000187FD /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		F908F6A81F9709A300A29E21 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		F908F6AA1F971CAC00A29E21 /* AnswerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
+		F908F6AE1F97276400A29E21 /* AnswerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerDetailViewController.swift; sourceTree = "<group>"; };
 		F9303D231F88F33B00F2E4EE /* CoursesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		F9303D281F8905E100F2E4EE /* CourseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		F978947D1F8209EF001706A4 /* QlikCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QlikCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				F9303D281F8905E100F2E4EE /* CourseCell.swift */,
+				F908F6AA1F971CAC00A29E21 /* AnswerCell.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -139,6 +146,8 @@
 				F97894871F8209EF001706A4 /* QlikCheck.xcdatamodeld */,
 				F9303D231F88F33B00F2E4EE /* CoursesViewController.swift */,
 				F9DA77271F92583D005B1725 /* QuestionViewController.swift */,
+				F908F6A81F9709A300A29E21 /* ResultViewController.swift */,
+				F908F6AE1F97276400A29E21 /* AnswerDetailViewController.swift */,
 			);
 			path = QlikCheck;
 			sourceTree = "<group>";
@@ -314,9 +323,12 @@
 			files = (
 				F904919B1F939DC9000187FD /* Extension.swift in Sources */,
 				F9DA77241F924FA5005B1725 /* Questions.swift in Sources */,
+				F908F6AF1F97276400A29E21 /* AnswerDetailViewController.swift in Sources */,
 				F97894811F8209EF001706A4 /* AppDelegate.swift in Sources */,
+				F908F6AB1F971CAC00A29E21 /* AnswerCell.swift in Sources */,
 				F9303D291F8905E100F2E4EE /* CourseCell.swift in Sources */,
 				F9DA77261F9252A5005B1725 /* DataModeling.swift in Sources */,
+				F908F6A91F9709A300A29E21 /* ResultViewController.swift in Sources */,
 				F97894891F8209EF001706A4 /* QlikCheck.xcdatamodeld in Sources */,
 				F9303D241F88F33B00F2E4EE /* CoursesViewController.swift in Sources */,
 				F9DA771F1F9242FC005B1725 /* StaticData.swift in Sources */,
