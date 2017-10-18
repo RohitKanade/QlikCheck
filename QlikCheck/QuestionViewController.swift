@@ -8,15 +8,17 @@
 
 import UIKit
 
+
+
 class QuestionViewController: UIViewController {
     
     
     @IBOutlet weak var counter: UILabel!
     @IBOutlet weak var question: UILabel!
-    @IBOutlet weak var optionA: UIButton!
-    @IBOutlet weak var optionB: UIButton!
-    @IBOutlet weak var optionC: UIButton!
-    @IBOutlet weak var optionD: UIButton!
+    @IBOutlet weak var optionA: UILabel!
+    @IBOutlet weak var optionB: UILabel!
+    @IBOutlet weak var optionC: UILabel!
+    @IBOutlet weak var optionD: UILabel!
     
     @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var showAnsBtn: UIButton!
@@ -30,6 +32,10 @@ class QuestionViewController: UIViewController {
         super.viewDidLoad()
         
         print(questions)
+        optionA.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
+        optionB.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
+        optionC.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
+        optionD.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
         
         totalQuestion = questions.count
         currentQuestion = questions[currentCount]
@@ -40,6 +46,21 @@ class QuestionViewController: UIViewController {
         // Hide
         hide()
         
+        let tap1 = UITapGestureRecognizer(target: self, action: #selector(QuestionViewController.OptionASelected))
+        optionA.isUserInteractionEnabled = true
+        optionA.addGestureRecognizer(tap1)
+        
+        let tap2 = UITapGestureRecognizer(target: self, action: #selector(QuestionViewController.OptionBSelected))
+        optionB.isUserInteractionEnabled = true
+        optionB.addGestureRecognizer(tap2)
+        
+        let tap3 = UITapGestureRecognizer(target: self, action: #selector(QuestionViewController.OptionCSelected))
+        optionC.isUserInteractionEnabled = true
+        optionC.addGestureRecognizer(tap3)
+        
+        let tap4 = UITapGestureRecognizer(target: self, action: #selector(QuestionViewController.OptionDSelected))
+        optionD.isUserInteractionEnabled = true
+        optionD.addGestureRecognizer(tap4)
     }
     
     func hide() {
@@ -58,16 +79,17 @@ class QuestionViewController: UIViewController {
     
     func setQuestion(currentQuestion : Questions)  {
         counter.text = "Questions \(currentCount+1) of \(totalQuestion)"
+        
         question.text = "\(String(describing: currentQuestion.question!))"
-        optionA.setTitle("A: \(String(describing: currentQuestion.optionA!))", for: .normal)
-        optionB.setTitle("B: \(String(describing: currentQuestion.optionB!))", for: .normal)
-        optionC.setTitle("C: \(String(describing: currentQuestion.optionC!))", for: .normal)
-        optionD.setTitle("D: \(String(describing: currentQuestion.optionD!))", for: .normal)
+        optionA.text = currentQuestion.optionA
+        optionB.text = currentQuestion.optionB
+        optionC.text = currentQuestion.optionC
+        optionD.text = currentQuestion.optionD
     }
     
     
     // Answer selected
-    @IBAction func OptionASelected(_ sender: Any) {
+    func OptionASelected(sender:UITapGestureRecognizer) {
         show()
         optionA.backgroundColor = UIColor.cyan
         
@@ -79,7 +101,7 @@ class QuestionViewController: UIViewController {
         questions[currentCount].userAnswer = questions[currentCount].optionA
     }
 
-    @IBAction func OptionBSelected(_ sender: Any) {
+    func OptionBSelected(sender:UITapGestureRecognizer) {
         show()
         optionB.backgroundColor = UIColor.cyan
         
@@ -91,7 +113,7 @@ class QuestionViewController: UIViewController {
         questions[currentCount].userAnswer = questions[currentCount].optionB
     }
     
-    @IBAction func OptionCSelected(_ sender: Any) {
+    func OptionCSelected(sender:UITapGestureRecognizer) {
         show()
         optionC.backgroundColor = UIColor.cyan
         
@@ -103,7 +125,7 @@ class QuestionViewController: UIViewController {
         questions[currentCount].userAnswer = questions[currentCount].optionC
     }
 
-    @IBAction func OptionDSelected(_ sender: Any) {
+    func OptionDSelected(sender:UITapGestureRecognizer) {
         show()
         optionD.backgroundColor = UIColor.cyan
         

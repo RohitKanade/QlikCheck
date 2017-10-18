@@ -18,7 +18,7 @@ func DataModeling() -> [Questions] {
     
     // 1 
     let one = Questions()
-    one.question = "testing question 1 "
+    one.question = "testing question 1"
     one.optionA = "option A"
     one.optionB = "option B"
     one.optionC = "option C"
