@@ -220,11 +220,13 @@
                     </view>
                     <connections>
                         <outlet property="counter" destination="P9r-ZY-w50" id="7xQ-Jh-rpH"/>
+                        <outlet property="nextBtn" destination="Eg8-d4-A1b" id="a49-B6-7EZ"/>
                         <outlet property="optionA" destination="Vrh-ij-pep" id="uAJ-Wa-3Gc"/>
                         <outlet property="optionB" destination="fa1-NZ-0bR" id="m3U-U0-53O"/>
                         <outlet property="optionC" destination="sG7-mb-Tiy" id="qFJ-kc-oOA"/>
                         <outlet property="optionD" destination="mLC-gD-tL6" id="85W-f2-SUC"/>
                         <outlet property="question" destination="8VB-0W-XbU" id="XU2-Yr-X2u"/>
+                        <outlet property="showAnsBtn" destination="dGo-t4-K7e" id="fIQ-tx-F4u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wes-rA-2lC" userLabel="First Responder" sceneMemberID="firstResponder"/>

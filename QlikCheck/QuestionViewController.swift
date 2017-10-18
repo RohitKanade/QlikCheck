@@ -18,6 +18,9 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var optionC: UIButton!
     @IBOutlet weak var optionD: UIButton!
     
+    @IBOutlet weak var nextBtn: UIButton!
+    @IBOutlet weak var showAnsBtn: UIButton!
+    
     var totalQuestion = 0, currentCount = 0
 
     var questions = [Questions]()
@@ -29,10 +32,24 @@ class QuestionViewController: UIViewController {
         print(questions)
         
         totalQuestion = questions.count
-        currentQuestion = questions[0]
+        currentQuestion = questions[currentCount]
 
         
         setQuestion(currentQuestion: currentQuestion!)
+        
+        // Hide
+        hide()
+        
+    }
+    
+    func hide() {
+        nextBtn.isHidden = true
+        showAnsBtn.isHidden = true
+    }
+    
+    func show(){
+        nextBtn.isHidden = false
+        showAnsBtn.isHidden = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,6 +68,7 @@ class QuestionViewController: UIViewController {
     
     // Answer selected
     @IBAction func OptionASelected(_ sender: Any) {
+        show()
         optionA.backgroundColor = UIColor.cyan
         
         optionB.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
@@ -59,6 +77,7 @@ class QuestionViewController: UIViewController {
     }
 
     @IBAction func OptionBSelected(_ sender: Any) {
+        show()
         optionB.backgroundColor = UIColor.cyan
         
         optionA.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
@@ -67,6 +86,7 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func OptionCSelected(_ sender: Any) {
+        show()
         optionC.backgroundColor = UIColor.cyan
         
         optionA.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
@@ -75,6 +95,7 @@ class QuestionViewController: UIViewController {
     }
 
     @IBAction func OptionDSelected(_ sender: Any) {
+        show()
         optionD.backgroundColor = UIColor.cyan
         
         optionB.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
@@ -89,12 +110,20 @@ class QuestionViewController: UIViewController {
     
     // Next
     @IBAction func NextSelected(_ sender: Any) {
+        hide()
         currentCount = currentCount+1
-        if currentCount == totalQuestion{
+        print(currentCount)
+        
+        if (currentCount+1) > totalQuestion{
             
         }else{
             currentQuestion = questions[currentCount]
             setQuestion(currentQuestion: currentQuestion!)
         }
+        
+        optionA.backgroundColor = hexStringToUIColor(hex: "F9F9F9")    
+        optionB.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
+        optionC.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
+        optionD.backgroundColor = hexStringToUIColor(hex: "F9F9F9")
     }
 }
