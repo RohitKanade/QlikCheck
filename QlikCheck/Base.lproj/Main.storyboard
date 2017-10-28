@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PuL-qw-IG4" id="Nqi-XA-ekY">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KuL-ac-fhj">
@@ -87,7 +87,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
-                                    <navigationItem title="Quize" id="uku-Bh-NQQ"/>
+                                    <navigationItem title="Quiz" id="uku-Bh-NQQ"/>
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9T-Q5-wOR">
@@ -331,20 +331,20 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="116"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Current Option" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="leo-Pe-I9S">
-                                                    <rect key="frame" x="18" y="43" width="351" height="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Option" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="leo-Pe-I9S">
+                                                    <rect key="frame" x="16" y="43" width="356" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You selected" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZ8-ef-1hF">
-                                                    <rect key="frame" x="16" y="70" width="351" height="18"/>
+                                                    <rect key="frame" x="16" y="70" width="356" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCb-9E-neY">
-                                                    <rect key="frame" x="16" y="8" width="367" height="18"/>
+                                                    <rect key="frame" x="16" y="8" width="354" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -352,14 +352,14 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="kZ8-ef-1hF" firstAttribute="leading" secondItem="Ykt-il-nlC" secondAttribute="leadingMargin" constant="8" id="2f5-cv-olv"/>
+                                                <constraint firstItem="leo-Pe-I9S" firstAttribute="trailing" secondItem="Ykt-il-nlC" secondAttribute="trailingMargin" constant="5" id="3Ce-Bi-8QU"/>
                                                 <constraint firstItem="bCb-9E-neY" firstAttribute="top" secondItem="Ykt-il-nlC" secondAttribute="topMargin" id="BE5-NQ-svB"/>
-                                                <constraint firstItem="kZ8-ef-1hF" firstAttribute="trailing" secondItem="Ykt-il-nlC" secondAttribute="trailingMargin" id="BN2-lg-UDi"/>
                                                 <constraint firstItem="leo-Pe-I9S" firstAttribute="leading" secondItem="Ykt-il-nlC" secondAttribute="leadingMargin" constant="8" id="D8x-Q1-MYR"/>
-                                                <constraint firstItem="leo-Pe-I9S" firstAttribute="trailing" secondItem="Ykt-il-nlC" secondAttribute="trailingMargin" id="JHL-DO-oPz"/>
+                                                <constraint firstAttribute="trailing" secondItem="bCb-9E-neY" secondAttribute="trailing" constant="5" id="ElL-tp-vok"/>
+                                                <constraint firstItem="kZ8-ef-1hF" firstAttribute="trailing" secondItem="Ykt-il-nlC" secondAttribute="trailingMargin" constant="5" id="IgU-WJ-VwB"/>
                                                 <constraint firstItem="kZ8-ef-1hF" firstAttribute="top" secondItem="leo-Pe-I9S" secondAttribute="bottom" constant="10" id="P5a-E0-PfT"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="kZ8-ef-1hF" secondAttribute="bottom" constant="20" id="cO1-IU-ngw"/>
                                                 <constraint firstItem="bCb-9E-neY" firstAttribute="leading" secondItem="leo-Pe-I9S" secondAttribute="leading" id="eup-j2-ivx"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="bCb-9E-neY" secondAttribute="trailing" constant="-16" id="xuS-xI-DwW"/>
                                                 <constraint firstItem="leo-Pe-I9S" firstAttribute="top" secondItem="bCb-9E-neY" secondAttribute="bottom" constant="17" id="zKz-ba-MBN"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -412,6 +412,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PgR-D0-2Ur"/>
+        <segue reference="aMK-UX-TOp"/>
     </inferredMetricsTieBreakers>
 </document>

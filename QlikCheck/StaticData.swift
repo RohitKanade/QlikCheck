@@ -22,6 +22,25 @@ struct StaticData {
         switch course {
         case "Data Modeling":
             return DataModeling()
+            
+        case "Set Analysis":
+            return SetAnalysis()
+            
+        case "Scripts":
+            return Scripts()
+            
+        case "Qlik Server-Publisher":
+            return QlikServerPublisher()
+            
+        case "Practice Exam 01":
+            return PracticeExam01()
+        
+        case "QlikSense Server":
+            return QlikSenseServer()
+            
+        case "NPrinting Questions":
+            return NPrintingQuestions()
+            
         default:
             return questions
         }
