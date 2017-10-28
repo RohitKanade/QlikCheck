@@ -775,7 +775,7 @@ func QlikFunctions() -> [Questions] {
     
     //55
     let fiftyFive = Questions()
-    fiftyOne.question = "A developer has used a Rank Function like this: rank( sum( Sales ), 4 ), what does this '4' mean here?"
+    fiftyFive.question = "A developer has used a Rank Function like this: rank( sum( Sales ), 4 ), what does this '4' mean here?"
     
     fiftyFive.optionA = "lowest rank across all rows"
     fiftyFive.optionB = "highest rank on first row and then decrement by one across each row"
