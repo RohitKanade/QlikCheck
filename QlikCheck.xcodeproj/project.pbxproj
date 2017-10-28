@@ -26,6 +26,7 @@
 		F97894A41F8209F0001706A4 /* QlikCheckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97894A31F8209F0001706A4 /* QlikCheckUITests.swift */; };
 		F9AE76291FA4D73F0088A628 /* QlikSenseServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AE76281FA4D73F0088A628 /* QlikSenseServer.swift */; };
 		F9AE762B1FA4EC990088A628 /* NPrintingQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AE762A1FA4EC990088A628 /* NPrintingQuestions.swift */; };
+		F9AE762D1FA4F1D40088A628 /* QlikFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AE762C1FA4F1D40088A628 /* QlikFunctions.swift */; };
 		F9DA771F1F9242FC005B1725 /* StaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DA771E1F9242FC005B1725 /* StaticData.swift */; };
 		F9DA77241F924FA5005B1725 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DA77231F924FA5005B1725 /* Questions.swift */; };
 		F9DA77261F9252A5005B1725 /* DataModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DA77251F9252A5005B1725 /* DataModeling.swift */; };
@@ -75,6 +76,7 @@
 		F97894A51F8209F0001706A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9AE76281FA4D73F0088A628 /* QlikSenseServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QlikSenseServer.swift; sourceTree = "<group>"; };
 		F9AE762A1FA4EC990088A628 /* NPrintingQuestions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPrintingQuestions.swift; sourceTree = "<group>"; };
+		F9AE762C1FA4F1D40088A628 /* QlikFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QlikFunctions.swift; sourceTree = "<group>"; };
 		F9DA771E1F9242FC005B1725 /* StaticData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticData.swift; sourceTree = "<group>"; };
 		F9DA77231F924FA5005B1725 /* Questions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		F9DA77251F9252A5005B1725 /* DataModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModeling.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				F92102CF1FA4C325003614D1 /* PracticeExam01.swift */,
 				F9AE76281FA4D73F0088A628 /* QlikSenseServer.swift */,
 				F9AE762A1FA4EC990088A628 /* NPrintingQuestions.swift */,
+				F9AE762C1FA4F1D40088A628 /* QlikFunctions.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				F9303D291F8905E100F2E4EE /* CourseCell.swift in Sources */,
 				F9DA77261F9252A5005B1725 /* DataModeling.swift in Sources */,
 				F92102CE1FA4B93E003614D1 /* QlikServerPublisher.swift in Sources */,
+				F9AE762D1FA4F1D40088A628 /* QlikFunctions.swift in Sources */,
 				F908F6A91F9709A300A29E21 /* ResultViewController.swift in Sources */,
 				F97894891F8209EF001706A4 /* QlikCheck.xcdatamodeld in Sources */,
 				F9303D241F88F33B00F2E4EE /* CoursesViewController.swift in Sources */,

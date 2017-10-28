@@ -41,6 +41,9 @@ struct StaticData {
         case "NPrinting Questions":
             return NPrintingQuestions()
             
+        case "Qlik Functions":
+            return QlikFunctions()
+            
         default:
             return questions
         }
