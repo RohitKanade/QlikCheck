@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PuL-qw-IG4" id="Nqi-XA-ekY">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KuL-ac-fhj">
@@ -232,12 +232,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTi-bv-UiR">
-                                <rect key="frame" x="150" y="28" width="75" height="28"/>
+                                <rect key="frame" x="155.5" y="28" width="64" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have currectly answer 7 of 10 answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Uh-MK-rqe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have correctly answer 7 of 10 answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Uh-MK-rqe">
                                 <rect key="frame" x="16" y="78" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -282,17 +282,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="f59-Oi-2Gk" firstAttribute="leading" secondItem="2Xv-Qf-44h" secondAttribute="leading" constant="16" id="ByJ-Ei-wx9"/>
-                            <constraint firstItem="4Uh-MK-rqe" firstAttribute="top" secondItem="hTi-bv-UiR" secondAttribute="bottom" constant="22.5" id="CT7-3f-qqn"/>
-                            <constraint firstItem="hTi-bv-UiR" firstAttribute="top" secondItem="VFD-F9-jqS" secondAttribute="bottom" constant="8" id="IkY-4k-dT1"/>
+                            <constraint firstItem="hTi-bv-UiR" firstAttribute="centerX" secondItem="2Xv-Qf-44h" secondAttribute="centerX" id="IwC-X1-gaQ"/>
                             <constraint firstItem="Eiy-P4-ObC" firstAttribute="top" secondItem="f59-Oi-2Gk" secondAttribute="bottom" constant="30" id="OsA-7r-X2h"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4Uh-MK-rqe" secondAttribute="trailing" id="PaZ-xl-Pge"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="hTi-bv-UiR" secondAttribute="trailing" constant="134" id="SDv-sT-wB5"/>
+                            <constraint firstItem="4Uh-MK-rqe" firstAttribute="top" secondItem="hTi-bv-UiR" secondAttribute="bottom" constant="22" id="Ths-QW-mPS"/>
                             <constraint firstItem="2d0-Nn-SId" firstAttribute="baseline" secondItem="Eiy-P4-ObC" secondAttribute="baseline" id="ecS-3O-53N"/>
                             <constraint firstAttribute="trailing" secondItem="Eiy-P4-ObC" secondAttribute="trailing" constant="9" id="kDV-I1-kpg"/>
                             <constraint firstItem="4Uh-MK-rqe" firstAttribute="leading" secondItem="2Xv-Qf-44h" secondAttribute="leadingMargin" id="nCg-BU-6cB"/>
                             <constraint firstItem="f59-Oi-2Gk" firstAttribute="top" secondItem="4Uh-MK-rqe" secondAttribute="bottom" constant="18" id="nO8-fG-vDx"/>
                             <constraint firstAttribute="trailing" secondItem="f59-Oi-2Gk" secondAttribute="trailing" constant="9" id="oKJ-Ma-mxN"/>
-                            <constraint firstItem="hTi-bv-UiR" firstAttribute="leading" secondItem="2Xv-Qf-44h" secondAttribute="leadingMargin" constant="134" id="rdV-Za-DuM"/>
+                            <constraint firstItem="hTi-bv-UiR" firstAttribute="top" secondItem="VFD-F9-jqS" secondAttribute="bottom" constant="8" id="raV-p7-SKZ"/>
                             <constraint firstItem="2d0-Nn-SId" firstAttribute="leading" secondItem="f59-Oi-2Gk" secondAttribute="leading" id="vUE-6U-Uot"/>
                             <constraint firstItem="f59-Oi-2Gk" firstAttribute="top" secondItem="4Uh-MK-rqe" secondAttribute="bottom" constant="18" id="vrM-eY-JTg"/>
                         </constraints>
@@ -412,6 +411,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="aMK-UX-TOp"/>
+        <segue reference="mbr-Ul-dbA"/>
     </inferredMetricsTieBreakers>
 </document>

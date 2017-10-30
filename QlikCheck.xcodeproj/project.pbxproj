@@ -276,7 +276,8 @@
 				TargetAttributes = {
 					F978947C1F8209EF001706A4 = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 8W3NNW5RWC;
+						ProvisioningStyle = Manual;
 					};
 					F97894931F8209F0001706A4 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -514,10 +515,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 8W3NNW5RWC;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = QlikCheck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = QlikCheck.QlikCheck;
+				PRODUCT_BUNDLE_IDENTIFIER = Com.APP.QlikCheck66667777;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "992b3406-154f-4b01-b686-f262521274d6";
+				PROVISIONING_PROFILE_SPECIFIER = QlikCheck;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -526,10 +533,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 8W3NNW5RWC;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = QlikCheck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = QlikCheck.QlikCheck;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = Com.APP.QlikCheck66667777;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "992b3406-154f-4b01-b686-f262521274d6";
+				PROVISIONING_PROFILE_SPECIFIER = QlikCheck;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

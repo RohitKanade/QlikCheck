@@ -18,7 +18,7 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        resultString.text = "You have currectly answered \(curreectAnswersGiven()) of \(questions.count) questions!"
+        resultString.text = "You have correctly answered \(curreectAnswersGiven()) of \(questions.count) questions!"
         
         if (getPercentage() > 80.0){
             resultImage.image = UIImage(named:"gold")
